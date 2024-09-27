@@ -49,8 +49,10 @@
             usernameTxt.Location = new Point(294, 172);
             usernameTxt.Multiline = true;
             usernameTxt.Name = "usernameTxt";
+            usernameTxt.ShortcutsEnabled = false;
             usernameTxt.Size = new Size(275, 30);
             usernameTxt.TabIndex = 0;
+            usernameTxt.KeyPress += usernameTxt_KeyPress_1;
             // 
             // passwordTxt
             // 
@@ -60,8 +62,10 @@
             passwordTxt.Multiline = true;
             passwordTxt.Name = "passwordTxt";
             passwordTxt.PasswordChar = '*';
+            passwordTxt.ShortcutsEnabled = false;
             passwordTxt.Size = new Size(275, 30);
             passwordTxt.TabIndex = 1;
+            passwordTxt.KeyPress += passwordTxt_KeyPress_1;
             // 
             // loginBtn
             // 

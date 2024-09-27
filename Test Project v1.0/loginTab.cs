@@ -58,7 +58,8 @@ namespace Test_Project_v1._0
         {
             passwordTxt.PasswordChar = showPass.Checked ? '\0' : '*';
         }
-        private void usernameTxt_KeyPress(object sender, KeyPressEventArgs e)
+
+        private void usernameTxt_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar))
             {
@@ -66,7 +67,7 @@ namespace Test_Project_v1._0
             }
         }
 
-        private void passwordTxt_KeyPress(object sender, KeyPressEventArgs e)
+        private void passwordTxt_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar))
             {
