@@ -47,10 +47,9 @@
             usernameTxt.Cursor = Cursors.IBeam;
             usernameTxt.Font = new Font("Segoe UI", 12F);
             usernameTxt.Location = new Point(294, 172);
-            usernameTxt.Multiline = true;
             usernameTxt.Name = "usernameTxt";
             usernameTxt.ShortcutsEnabled = false;
-            usernameTxt.Size = new Size(275, 30);
+            usernameTxt.Size = new Size(275, 29);
             usernameTxt.TabIndex = 0;
             usernameTxt.KeyPress += usernameTxt_KeyPress_1;
             // 
@@ -59,11 +58,10 @@
             passwordTxt.Cursor = Cursors.IBeam;
             passwordTxt.Font = new Font("Segoe UI", 12F);
             passwordTxt.Location = new Point(294, 234);
-            passwordTxt.Multiline = true;
             passwordTxt.Name = "passwordTxt";
             passwordTxt.PasswordChar = '*';
             passwordTxt.ShortcutsEnabled = false;
-            passwordTxt.Size = new Size(275, 30);
+            passwordTxt.Size = new Size(275, 29);
             passwordTxt.TabIndex = 1;
             passwordTxt.KeyPress += passwordTxt_KeyPress_1;
             // 
@@ -162,10 +160,10 @@
             // 
             label6.AutoSize = true;
             label6.Cursor = Cursors.Hand;
-            label6.Font = new Font("Segoe UI Semibold", 10.5F, FontStyle.Bold);
+            label6.Font = new Font("Verdana", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.Location = new Point(554, 9);
             label6.Name = "label6";
-            label6.Size = new Size(18, 19);
+            label6.Size = new Size(18, 18);
             label6.TabIndex = 9;
             label6.Text = "X";
             label6.Click += label6_Click;

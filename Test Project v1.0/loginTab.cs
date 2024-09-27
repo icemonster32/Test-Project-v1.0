@@ -23,7 +23,7 @@ namespace Test_Project_v1._0
 
             if (string.IsNullOrEmpty(usernameTxt.Text) || string.IsNullOrEmpty(passwordTxt.Text))
             {
-                MessageBox.Show("Please input Username and Password", "Error");
+                MessageBox.Show("Please input Username and Password", "Login");
             }
             else
             {
@@ -36,13 +36,13 @@ namespace Test_Project_v1._0
                 if (myReader.Read())
                 {
                     this.Hide();
-                    dashboardTab frm2 = new dashboardTab();
-                    frm2.ShowDialog();
+                    dashboardTab dashboard = new dashboardTab();
+                    dashboard.ShowDialog();
 
                 }
                 else
                 {
-                    MessageBox.Show("Incorrect Login Information! Try again.");
+                    MessageBox.Show("Incorrect Login Information! Try again.", "Login");
                 }
                 conn.connClose();
             }
