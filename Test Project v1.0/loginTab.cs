@@ -74,5 +74,10 @@ namespace Test_Project_v1._0
                 e.Handled = true;
             }
         }
+
+        private void exit_Click_1(object sender, EventArgs e)
+        {
+            Control.Exit();
+        }
     }
 }

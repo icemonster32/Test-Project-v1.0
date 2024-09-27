@@ -38,7 +38,7 @@
             label3 = new Label();
             showPass = new CheckBox();
             label4 = new Label();
-            exit = new Label();
+            exit = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -158,15 +158,20 @@
             // 
             // exit
             // 
-            exit.AutoSize = true;
+            exit.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             exit.Cursor = Cursors.Hand;
+            exit.FlatAppearance.BorderColor = Color.Silver;
+            exit.FlatAppearance.BorderSize = 0;
+            exit.FlatStyle = FlatStyle.Flat;
             exit.Font = new Font("Verdana", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            exit.Location = new Point(554, 9);
+            exit.Location = new Point(543, 1);
+            exit.Margin = new Padding(0);
             exit.Name = "exit";
-            exit.Size = new Size(18, 18);
-            exit.TabIndex = 9;
+            exit.Size = new Size(40, 35);
+            exit.TabIndex = 10;
             exit.Text = "X";
-            exit.Click += exit_Click;
+            exit.UseVisualStyleBackColor = true;
+            exit.Click += exit_Click_1;
             // 
             // Login
             // 
@@ -206,6 +211,6 @@
         private Label label3;
         private CheckBox showPass;
         private Label label4;
-        private Label exit;
+        private Button exit;
     }
 }

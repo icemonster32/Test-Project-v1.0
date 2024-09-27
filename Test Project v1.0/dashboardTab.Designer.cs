@@ -30,7 +30,8 @@
         {
             panel1 = new Panel();
             label1 = new Label();
-            mini = new Label();
+            button1 = new Button();
+            button2 = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -61,18 +62,38 @@
             label1.Text = "Logout";
             label1.Click += label1_Click_1;
             // 
-            // mini
+            // button1
             // 
-            mini.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            mini.AutoSize = true;
-            mini.Cursor = Cursors.Hand;
-            mini.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            mini.Location = new Point(1383, 9);
-            mini.Name = "mini";
-            mini.Size = new Size(21, 17);
-            mini.TabIndex = 3;
-            mini.Text = "—";
-            mini.Click += mini_Click;
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button1.Cursor = Cursors.Hand;
+            button1.FlatAppearance.BorderColor = Color.Silver;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Location = new Point(1331, 1);
+            button1.Margin = new Padding(0);
+            button1.Name = "button1";
+            button1.Size = new Size(40, 35);
+            button1.TabIndex = 1;
+            button1.Text = "—";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button2.Cursor = Cursors.Hand;
+            button2.FlatAppearance.BorderColor = Color.Silver;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Webdings", 12F, FontStyle.Regular, GraphicsUnit.Point, 2);
+            button2.Location = new Point(1374, 1);
+            button2.Margin = new Padding(0);
+            button2.Name = "button2";
+            button2.Size = new Size(40, 35);
+            button2.TabIndex = 2;
+            button2.Text = "1";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // dashboardTab
             // 
@@ -80,7 +101,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(1416, 787);
-            Controls.Add(mini);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(panel1);
             Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.None;
@@ -88,17 +110,16 @@
             Name = "dashboardTab";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "dashboardTab";
-            WindowState = FormWindowState.Maximized;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
         private Panel panel1;
         private Label label1;
-        private Label mini;
+        private Button button1;
+        private Button button2;
     }
 }

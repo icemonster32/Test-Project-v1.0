@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Org.BouncyCastle.Crypto;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,10 +13,13 @@ namespace Test_Project_v1._0
 {
     public partial class dashboardTab : Form
     {
+
         public dashboardTab()
         {
             InitializeComponent();
+            Control.SetIntial(this);
         }
+
 
         private void label1_Click_1(object sender, EventArgs e)
         {
@@ -36,6 +40,17 @@ namespace Test_Project_v1._0
         private void mini_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Control.Minimize(this);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            Control.DoMaximize(this, btn);
         }
     }
 }
