@@ -49,12 +49,12 @@ namespace Test_Project_v1._0
 
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void showPass_CheckedChanged(object sender, EventArgs e)
         {
             passwordTxt.PasswordChar = showPass.Checked ? '\0' : '*';
         }

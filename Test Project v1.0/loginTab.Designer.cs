@@ -38,7 +38,7 @@
             label3 = new Label();
             showPass = new CheckBox();
             label4 = new Label();
-            label6 = new Label();
+            exit = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -144,7 +144,7 @@
             showPass.TabIndex = 7;
             showPass.Text = "Show Password";
             showPass.UseVisualStyleBackColor = true;
-            showPass.CheckedChanged += checkBox1_CheckedChanged;
+            showPass.CheckedChanged += showPass_CheckedChanged;
             // 
             // label4
             // 
@@ -156,17 +156,17 @@
             label4.TabIndex = 8;
             label4.Text = "Test Project V1.0";
             // 
-            // label6
+            // exit
             // 
-            label6.AutoSize = true;
-            label6.Cursor = Cursors.Hand;
-            label6.Font = new Font("Verdana", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(554, 9);
-            label6.Name = "label6";
-            label6.Size = new Size(18, 18);
-            label6.TabIndex = 9;
-            label6.Text = "X";
-            label6.Click += label6_Click;
+            exit.AutoSize = true;
+            exit.Cursor = Cursors.Hand;
+            exit.Font = new Font("Verdana", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            exit.Location = new Point(554, 9);
+            exit.Name = "exit";
+            exit.Size = new Size(18, 18);
+            exit.TabIndex = 9;
+            exit.Text = "X";
+            exit.Click += exit_Click;
             // 
             // Login
             // 
@@ -174,7 +174,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(584, 461);
-            Controls.Add(label6);
+            Controls.Add(exit);
             Controls.Add(label4);
             Controls.Add(showPass);
             Controls.Add(label3);
@@ -206,6 +206,6 @@
         private Label label3;
         private CheckBox showPass;
         private Label label4;
-        private Label label6;
+        private Label exit;
     }
 }
